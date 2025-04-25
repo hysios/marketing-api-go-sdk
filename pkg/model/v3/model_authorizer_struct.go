@@ -13,6 +13,8 @@ package model
 type AuthorizerStruct struct {
 	AccountUin      *int64               `json:"account_uin,omitempty"`
 	AccountId       *int64               `json:"account_id,omitempty"`
+	LoginName       *LoginType           `json:"login_name,omitempty"`
+	AccountName     *string              `json:"account_name,omitempty"`
 	ScopeList       *[]string            `json:"scope_list,omitempty"`
 	WechatAccountId *string              `json:"wechat_account_id,omitempty"`
 	AccountRoleType OauthAccountRoleType `json:"account_role_type,omitempty"`
